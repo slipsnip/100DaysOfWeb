@@ -1,4 +1,4 @@
-#!/home/wurst/slipsnip/100daysweb/D4Flask/venv/bin/python
+#!/home/wurst/slipsnip/100DaysOfWeb/D4Flask/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
