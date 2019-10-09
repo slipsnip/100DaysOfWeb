@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up for FoxRem</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="extras/form.css">
+    <link rel="stylesheet" href="extras/site.css">
+
+</head>
+<body>
+
+<!-- sign up form here ... -->
+<h1>Sign up for FoxRem</h1>
+
+<form action="" method="post">
+  <input type="text" name="full_name" required placeholder=" full name">
+  <input type="email" name="email" required placeholder=" user@domain.com">
+  <input type="password" name="password" minlength="8" required placeholder=" password">
+  <input type="number" min="18" name="age" required placeholder=" age in years">
+  <select id="referal" name="referal" required>
+    <option value="">Please select and option</option>
+    <option value="podcast">Podcast</option>
+    <option value="search">Search</option>
+    <option value="friend">Friend</option>
+    <option value=""></option>
+  </select>
+  <button type="submit">Register</button>
+</form>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="extras/form_hook.js"></script>
+</body>
+</html>

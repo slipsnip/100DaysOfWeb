@@ -1,0 +1,19 @@
+body {
+	text-align: center;
+}
+
+form> * {
+	margin: 5px;
+}
+
+form {
+	display: inline-block;
+	background-color: aqua;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+.container {
+	margin: auto;
+	width: 50%;
+}
