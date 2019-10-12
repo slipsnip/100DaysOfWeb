@@ -1,0 +1,43 @@
+---
+openapi: 3.0.0
+info:
+  title: MARVEL API
+  version: '1'
+  description: Connect to Marvel's API
+servers:
+- url: https://gateway.marvel.com/v1/public/
+paths:
+  "/{endpoint}/":
+    get:
+      summary: Get all data for endpoint
+      operationId: getEndpoint
+      parameters:
+      - name: endpoint
+        in: path
+        required: 'true'
+        description: endpoint to request data for
+        schema:
+          type: string
+          minLength: 6
+          maxLength: 10
+      - name: ts
+        in: query
+        required: 'true'
+        description: timestamp or long string that changes between requests
+        schema:
+          type: string
+          minLength: 1
+      - name: apikey
+        in: query
+        required: 'true'
+        description: public API key you were assigned
+        schema:
+          type: string
+          minLength: 32
+      - name: hash
+        in: query
+        required: 'true'
+        description: md5 hash of ts+publickey+privatekey
+        schema:
+          type: string
+          minLength: 32

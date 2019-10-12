@@ -1,0 +1,6 @@
+schema:
+    path: schema.json
+    format: openapi
+docs:
+    output_dir: docs
+    theme: apistar

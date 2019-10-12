@@ -1,0 +1,3 @@
+schema:
+  path: marvel-schema.yml
+  format: openapi
